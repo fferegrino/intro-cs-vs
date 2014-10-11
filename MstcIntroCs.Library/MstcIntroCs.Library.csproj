@@ -39,8 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Elements\Course.cs" />
-    <Compile Include="Elements\Student.cs" />
+    <Compile Include="Elements\People\Person.cs" />
+    <Compile Include="Elements\People\Student.cs" />
+    <Compile Include="Elements\People\Teacher.cs" />
+    <Compile Include="Elements\Things\Book.cs" />
+    <Compile Include="Elements\Things\Door.cs" />
+    <Compile Include="Elements\Things\IOpenable.cs" />
+    <Compile Include="Elements\Things\Page.cs" />
     <Compile Include="Extensions\StudentExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

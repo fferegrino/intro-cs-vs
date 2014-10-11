@@ -4,50 +4,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MstcIntroCs.Library.Elements
+namespace MstcIntroCs.Library.Elements.People
 {
-    public class Student
+    // Student deriva de la clase Person:
+    public class Student : Person
     {
+
+        #region Constructores
+        public Student(string name, string nickname)
+            : base(name)
+        {
+            Nickname = nickname;
+        }
+
+        public Student(string name)
+            : base(name)
+        {
+
+        }
+        #endregion
+
         #region Propiedades ejemplo
-        // Propiedad autoimplementada:
-        public string Name { get; set; }
-
-        // Propiedad:
-        private string _name;
-        //// Propiedad completa:
-        //public string Name
-        //{
-        //    get { return _name; }
-        //    set { _name = value; }
-        //}
-
-
-        public void SetName(string name)
-        {
-            _name = name;
-        }
-
-        public string GetName()
-        {
-            return _name;
-        }
-
         // Propiedad nullable
         public DateTime? GraduationDate { get; set; }
-        // Equivalent: public Nullable<DateTime> { get; set; }
-
-
+        // Equivalente: public Nullable<DateTime> { get; set; }
         #endregion
 
         #region Propiedades de Student
         public int Level { get; set; }
-        
+
         /// <summary>
         /// Grade Point Average
         /// </summary>
         public decimal Gpa { get; set; }
-
-        public List<Course> Courses { get; set; }
 
         public string Nickname { get; set; }
         #endregion
@@ -61,6 +50,19 @@ namespace MstcIntroCs.Library.Elements
         {
             return Name + "(" + (Nickname ?? "no nickname") + ")";
         }
+
+        /// <summary>
+        /// Override the SayHello method from the base class
+        /// </summary>
+        /// <returns></returns>
+        public override string SayHello()
+        {
+            return "Hi, I'm a student, my name is " + ToString();
+        }
         #endregion
+
+
+
     }
+
 }

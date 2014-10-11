@@ -48,7 +48,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Mstc.Library\MstcIntroCs.Library.csproj">
+    <ProjectReference Include="..\MstcIntroCs.Library\MstcIntroCs.Library.csproj">
       <Project>{023acb83-59b8-4892-b0c7-b5c5fea4a237}</Project>
       <Name>MstcIntroCs.Library</Name>
     </ProjectReference>

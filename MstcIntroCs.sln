@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MstcIntroCs.Library", "MstcIntroCs.Library\MstcIntroCs.Library.csproj", "{023ACB83-59B8-4892-B0C7-B5C5FEA4A237}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MstcIntroCs.Console", "MstcIntroCs.Console\MstcIntroCs.Console.csproj", "{2744C87C-A56E-4782-BADF-43B410D9B227}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MstcIntroCs.Program", "MstcIntroCs.Program\MstcIntroCs.Program.csproj", "{2744C87C-A56E-4782-BADF-43B410D9B227}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
