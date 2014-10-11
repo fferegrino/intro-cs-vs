@@ -13,11 +13,11 @@ namespace MstcIntroCs.Program
         static void Main(string[] args)
         {
             #region Properties
-            //Student s = new Student();
-            //s.Name = "Antonio";
-            //System.Console.WriteLine(s);
-            //s.Nickname = "Fere";
-            //System.Console.WriteLine(s);
+            Student s = new Student(String.Empty);
+            s.Name = "Antonio";
+            System.Console.WriteLine(s.Name);
+            s.Nickname = "Fere";
+            System.Console.WriteLine(s.Nickname);
             #endregion
 
             #region Indexers
@@ -51,15 +51,32 @@ namespace MstcIntroCs.Program
 
             #endregion
 
+            #region Enums
+            Teacher hardTeacher = new Teacher("Hard teacher");
+            hardTeacher.TeacherDifficulty = Difficulty.Easy;
+
+            switch (hardTeacher.TeacherDifficulty)
+            {
+                case Difficulty.SuperEasy:
+                    break;
+                case Difficulty.Impossible:
+                    break;
+                default:
+                    break;
+            }
+
+            #endregion
+
+            #region Generics
+            Bus<Book> busOfBooks = new Bus<Book>();
+            Bus<Teacher> busOfTeachers = new Bus<Teacher>();
+            #endregion
+
             System.Console.ReadLine();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="thing"></param>
+        //                                vvvvvvvvv
         private static void OpenSomething(IOpenable thing)
-        //                                ^^^^^^^^^ 
         {
             thing.Open();
         }

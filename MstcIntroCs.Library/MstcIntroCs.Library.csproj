@@ -43,6 +43,7 @@
     <Compile Include="Elements\People\Student.cs" />
     <Compile Include="Elements\People\Teacher.cs" />
     <Compile Include="Elements\Things\Book.cs" />
+    <Compile Include="Elements\Things\Bus.cs" />
     <Compile Include="Elements\Things\Door.cs" />
     <Compile Include="Elements\Things\IOpenable.cs" />
     <Compile Include="Elements\Things\Page.cs" />

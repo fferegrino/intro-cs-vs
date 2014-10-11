@@ -6,6 +6,16 @@ using System.Threading.Tasks;
 
 namespace MstcIntroCs.Library.Elements.People
 {
+
+    public enum Difficulty
+    {
+        SuperEasy,
+        Easy,
+        Normal,
+        Hard,
+        Impossible
+    };
+
     public class Teacher : Person
     {
         #region Constructores
@@ -14,6 +24,13 @@ namespace MstcIntroCs.Library.Elements.People
         {
 
         }
+        #endregion
+
+
+        #region Propiedades
+
+        public Difficulty TeacherDifficulty { get; set; }
+
         #endregion
 
         /// <summary>
