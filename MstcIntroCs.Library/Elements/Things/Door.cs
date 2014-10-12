@@ -17,5 +17,10 @@ namespace MstcIntroCs.Library.Elements.Things
         {
             throw new NotImplementedException();
         }
+
+        public bool IsClosed { get; set; }
+
+        public int TimesOpened { get; set; }
+
     }
 }

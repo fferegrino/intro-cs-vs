@@ -9,6 +9,12 @@ namespace MstcIntroCs.Library.Elements.Things
     public class Book : IOpenable
     {
 
+        public Book()
+            : this(100)
+        {
+
+        }
+
         public Book(int numberPages)
         {
             pages = new Page[numberPages];
@@ -46,6 +52,12 @@ namespace MstcIntroCs.Library.Elements.Things
         {
             throw new NotImplementedException();
         }
+
+
+
+        public bool IsClosed { get; set; }
+
+        public int TimesOpened { get; set; }
         #endregion
     }
 }

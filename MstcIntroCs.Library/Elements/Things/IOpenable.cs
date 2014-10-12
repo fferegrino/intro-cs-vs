@@ -8,8 +8,11 @@ namespace MstcIntroCs.Library.Elements.Things
 {
     public interface IOpenable
     {
-        public void Open();
+        bool IsClosed { get; set; }
+        int TimesOpened { get; set; }
 
-        public void Close();
+        void Open();
+
+        void Close();
     }
 }

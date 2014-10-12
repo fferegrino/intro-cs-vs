@@ -47,10 +47,13 @@
     <Compile Include="Elements\Things\Door.cs" />
     <Compile Include="Elements\Things\IOpenable.cs" />
     <Compile Include="Elements\Things\Page.cs" />
+    <Compile Include="Elements\Things\Truck.cs" />
     <Compile Include="Extensions\StudentExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
