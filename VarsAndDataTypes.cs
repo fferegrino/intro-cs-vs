@@ -1,3 +1,4 @@
+// Run this code online: http://ideone.com/fork/iOqGO1
 using System;
 
 class VarsAndDataTypes
@@ -23,10 +24,9 @@ class VarsAndDataTypes
 		lolIdontWork = 30;
 		// This now works:
 		Console.WriteLine(lolIdontWork);
-		
+
 
 		//// Uncomment if running in Visual Studio:
 		//Console.ReadKey();
 	}
 }
-

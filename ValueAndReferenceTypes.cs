@@ -1,3 +1,4 @@
+// Run this code online: http://ideone.com/fork/OSRRUI
 using System;
 
 class ValueAndReferenceTypes
@@ -28,8 +29,8 @@ class ValueAndReferenceTypes
         Console.WriteLine("timeValue2:\tHours: " + timeValue2.Hours + "\tMinutes: " + timeValue2.Minutes);
 
 
-        // Uncomment if running in Visual Studio:
-        Console.ReadKey();
+        //// Uncomment if running in Visual Studio:
+        //Console.ReadKey();
     }
 }
 
