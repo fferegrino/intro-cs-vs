@@ -1,7 +1,7 @@
 // Run this code online: http://ideone.com/fork/iOqGO1
 using System;
 
-class VarsAndDataTypes
+class Arrays
 {
 
 	static int lolIwork;
