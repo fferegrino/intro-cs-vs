@@ -39,12 +39,19 @@ class CharsAndStrings
     </body>
 </html>
 ";
-
-		// TODO: Añadir uso de StringBuilder
+		Console.WriteLine(html);
 		
-        Console.WriteLine(html);
+		// TODO: Añadir uso de StringBuilder
+		// This example was found at http://stackoverflow.com/questions/21644658/how-to-use-stringbuilder-wisely
+		StringBuilder myString = new StringBuilder("123");
+		while (Console.ReadLine() == "a")
+		{
+			myString.Append("+PQR"); //Average loop times 4~ or more
+		}
+		myString.Append("345");
+		Console.WriteLine(myString.ToString());
 
         //// Uncomment if running in Visual
-        Console.ReadKey();
+        //Console.ReadKey();
     }
 }
